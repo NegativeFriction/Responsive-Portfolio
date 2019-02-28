@@ -1,0 +1,328 @@
+/* Build the background */
+body {
+  background-image: url("./../images/Background.jpg");
+}
+/* End of background building */
+
+/* Common Header Stuff */
+.topBox {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 5px;
+  background: #ffffff;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: "Georgia", Times, Times New Roman, serif;
+  border-bottom: solid 3px #cccccc;
+}
+
+h1 {
+  padding: 0px 0;
+  margin: 0;
+  font-size: 28px;
+  color: #ffffff;
+  background: #4aaaa5;
+  float: left;
+  vertical-align: bottom;
+  line-height: 100px;
+  margin-left: 5%;
+}
+
+h2 {
+  /* float: right;
+  margin: 0px;
+  margin-right: 15%;
+  padding-left: 15px;
+  padding-right: 15px; */
+  color: #999;
+  /* vertical-align: bottom;
+  line-height: 100px; */
+}
+
+.links {
+  float: right;
+  margin-right: 15%;
+  height: auto;
+  vertical-align: bottom;
+  line-height: 100px;
+}
+
+/* End Common Header Stuff */
+
+/* Common Body Stuff */
+
+#InteriorBox {
+  width: 960px;
+  height: auto;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-bottom: 1%;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+}
+
+.Header-Text {
+  color: #4aaaaf;
+  font-size: 80px;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  text-align: left;
+}
+
+.gray-line {
+  height: 3px;
+  width: 90%;
+  margin: auto;
+  background-color: lightgray;
+  opacity: 0.5;
+}
+
+.clear {
+  clear: both;
+}
+
+/* End Common Body Stuff */
+
+/* Portfolio Stuff */
+.Pic {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: white;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 1px solid white;
+  margin: 50px;
+  margin-left: 125px;
+  top: 50px;
+  opacity: 1;
+  float: left;
+  z-index: 0;
+}
+
+img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  float: left;
+  z-index: 1;
+  opacity: 1;
+}
+
+.Descriptor {
+  position: absolute;
+  bottom: 15px;
+  z-index: 100;
+  color: white;
+  width: 100%;
+  height: auto;
+  background-color: #4aaaaf;
+  float: left;
+  opacity: 0.8;
+}
+/* End Portfolio Stuff */
+
+/* Footer Text Stuff */
+
+.footer {
+  /* position: absolute;
+        bottom: 0%; */
+  width: 100%;
+}
+
+.blueFooterBox {
+  height: 100px;
+  background-color: #4aaaaf;
+  text-align: center;
+  color: white;
+  vertical-align: bottom;
+  line-height: 100px;
+  margin: auto;
+}
+
+.grayFooterBox {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  height: 80px;
+  background-color: darkgray;
+  margin: auto;
+}
+/* End Footer Text Stuff */
+
+/* Stuff for my About Me Page */
+
+.left {
+  text-align: left;
+  margin-left: 4%;
+}
+
+.pic-wrapper > img {
+  width: 20%;
+  height: 20%;
+  float: left;
+  margin: auto;
+  margin-left: 10%;
+  margin-right: 10px;
+  margin-top: 1%;
+}
+
+.body-wrapper {
+  margin: auto;
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+  float: left;
+  background-color: white;
+}
+
+.about {
+  margin: auto;
+  margin-left: 10%;
+  margin-top: 3%;
+  /* float: left; */
+}
+
+/* End stuff for my about me page Stuff */
+
+/* Stuff for my Contact Page */
+
+form {
+  /* margin-top: 3%; */
+  /* margin-left: 5%; */
+  color: black;
+  font-size: 24px;
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+.wrapper {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 980px) {
+  #InteriorBox {
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: blue; */
+  }
+
+  h1 {
+    left: 5%;
+  }
+
+  h2 {
+    right: 10%;
+  }
+
+  .Header-Text {
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #InteriorBox {
+      width: 90%;
+      margin: auto;
+    }
+
+    .Pic {
+      position: relative;
+      text-align: center;
+      color: white;
+      background-color: white;
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border: 1px solid white;
+      margin: 50px;
+      margin-left: 15%;
+      top: 10%;
+      opacity: 1;
+      float: left;
+      z-index: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #InteriorBox {
+    width: 90%;
+  }
+
+  .Pic {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: white;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border: 1px solid white;
+    margin: 50px;
+    margin-left: 15%;
+    top: 10%;
+    opacity: 1;
+    float: left;
+    z-index: 0;
+  }
+
+  .Descriptor {
+    font-size: 35px;
+  }
+
+  .pic-wrapper {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+  }
+
+  .pic-wrapper > img {
+    width: 100%;
+    height: 100%;
+    float: none;
+    margin: auto;
+  }
+
+  .about {
+    float: none;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+  }
+  h1 {
+    margin: auto;
+    vertical-align: top;
+    width: 100%;
+    text-align: center;
+    height: 60%;
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .links {
+    float: none;
+    margin: auto;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+  }
+
+  h2 {
+    float: none;
+    margin: auto;
+    vertical-align: bottom;
+  }
+}
